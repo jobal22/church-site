@@ -1,56 +1,44 @@
 import React, { Component } from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
+// import PropTypes from 'prop-types';
 import Context from './context';
-// import config from './.config';
-import logo from './Img/SCLogoBig.png';
+import config from './.config';
+// import logo from './Img/SCLogoBig.png';
 import calvary from './Images/calvary-logo2.png';
+import logo from './Images/trinity-word-logo.png';
 import HamburgerMenu from './Components/HamburgerMenu/HamburgerMenu';
 import AboutUs from './Components/AboutUs/AboutUs';
 import HomePage from './Components/HomePage/HomePage';
-import Book from './Components/Book/Book';
-import Team from './Components/Team/Team';
-import Contact from './Components/Contact/Contact';
 import './App.css';
 
 export default class App extends Component {
 
-  state = {
-    emails: [],
-    events: [],
-    addEmails: {
-      hasError: false,
-      touched: false,
-      name: '',
-    },
-    addEvents: {
-      hasError: false,
-      touched: false,
-      name: '',
-    }
+  constructor(props) {
+    super(props);
+  
+    this.listener = null;
+    this.state = {
+      status: "top"
+    };
   }
 
-  setEmails = emails => {
-    this.setState({
-      emails
-    })
+  componentDidMount() {
+    this.listener = document.addEventListener("scroll", e => {
+      var scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >= 300) {
+        if (this.state.status !== "App__nav") {
+          this.setState({ status: "App__nav" });
+        }
+      } else {
+        if (this.state.status !== "top") {
+          this.setState({ status: "top" });
+        }
+      }
+    });
   }
 
-  setEvents = events => {
-    this.setState({
-      events
-    })
-  }
-
-  handleAddEmails = emails => {
-    this.setState({
-      emails: [...this.state.emails, emails],
-    })
-  }
-
-  handleAddEvents = events => {
-    this.setState({
-      events: [...this.state.events, events],
-    })
+  componentDidUpdate() {
+    document.removeEventListener("scroll", this.listener);
   }
 
 
@@ -58,39 +46,42 @@ export default class App extends Component {
     return (
       <Switch>
         <Route exact path = "/" component={HomePage}/>
-        <Route  path = "/book" component={Book}/>
-        <Route  path = "/team" component={Team}/>
-        <Route  path = "/contact" component={Contact}/>
       </Switch>
     )
   }
 
   render() {
-    const contextValue = {
-      emails: this.state.emails,
-      handleAddEmails: this.handleAddEmails,
-      events: this.state.events,
-      handleAddEvents: this.handleAddEvents,
-
-    }
     return (
       <div className='App-container'>
         <div className='content-wrap'>
-          <nav className='App__nav'>
+          <nav className='App__nav' 
+          style={{
+          backgroundColor: this.state.status === "top" ? "rgba(14, 44, 59, 0.2)" : "rgba(250, 250, 250)",
+        }}>
             <Link className='navLink' to={'/'}>
-              <img className='logo img' src={calvary} alt='Logo'/>
+              <img className='logo img' src={logo} alt='Logo' />
             </Link>
             <div className="topnav">
               <div className="hamburger">
-                <HamburgerMenu/>
+                <HamburgerMenu />
               </div>
             </div>
           </nav>
-          <div>
-            <Context.Provider value={contextValue}>
+          <main className='Main'>
+            <Context.Provider>
               <main className='App__main'>{this.renderMainRoutes()}</main>
             </Context.Provider>
-          </div>
+          </main>
+        </div>
+        <div className='footer'>
+        <footer className="App__footer">
+          <ol className='footIcon'>
+            <li><a className='fIcon far fa-envelope' href={`mailto:${config.email}`} target='_blank' rel="noopener noreferrer"></a></li>
+            <li><a className='fIcon fab fa-linkedin-in' href={''}></a></li>
+            <li><a className='fIcon fab fa-instagram' href='https://www.instagram.com/sparrowscoffeega/' target='_blank' rel="noopener noreferrer"></a></li>
+          </ol>
+          {/* <p>COPYRIGHT © 2020 SPARROWS COFFEE CO. | ALL RIGHTS RESERVED</p> */}
+        </footer>
         </div>
       </div>
     )

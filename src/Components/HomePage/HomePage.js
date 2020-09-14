@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import config from '../../.config';
-import onehour from '../../Img/1hour.png';
-import twohour from '../../Img/2hour.png';
-import threehour from '../../Img/3hour.png';
-import custom from '../../Img/custom.png';
+import Form from '../Form/Form';
+import group from '../../Images/small-group.jpg';
+import families from '../../Images/families.jpg';
 
 import './HomePage.css';
 
@@ -23,54 +21,40 @@ export default function AboutUs() {
         <div className='HPServiceTime__background' />
         <div className='HPServiceTime__content'>
           <h1>Live services now</h1>
-          <button><Link className='aboutUsLink' to={`/book`}>Book Event</Link></button>
+          <h2>Sundays: Bible Study at 9:00am &amp; Worship Service at 10:45am at <a className='locationLink' href='https://goo.gl/maps/DMeZ4Kjd2Tke396F8' target='_blank' rel="noopener noreferrer">Trinity Baptist Church</a></h2>
         </div>
       </section>
-      {/* <section className='passion'>
-        <div className='passion__background'/>
-          <h3>Our Passion</h3>
-          <p>Who says no to coffee? Did you know a person’s ability to smell can evoke particular memories; the scent of a freshly pulled shot of espresso will bring your guests back to that star-lit night they were given the opportunity to sip on a drink they just could not forget. You bring the people, we bring the coffee. Let us make your dreams come true by providing not only the best coffee but enhancing your event that allows you to sit down and enjoy..... Or get up and get more. At Sparrows, we are committed to offering you the best coffee at your next event!</p>
-      </section> */}
-      <section className='teamMember'>
-        <div className='teamMember__background' style={{transform: `translateY(-${offsetY * 0.2}px)` }} alt='bride'/>
-        <div className='teamMember__content'>
-          <h1>Coffee with Personality</h1>
-          <button><Link className='aboutUsLink' to={`/team`}>Meet Our Team</Link></button>
-        </div>
+      <section className='HPSermon'>
+        <div className='HPSermon__background'/>
+        <h3>Last Weeks Sermon</h3>
+        <iframe className='youtubeVid' width="560" height="315" src="https://www.youtube.com/embed/gbZ-W4vYuF4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
       </section>
-      <section className='passion custom'>
-        <div className='custom__background'/>
-        <h3>Packages</h3>
-        <p>Choose which package best fits your event.  We will have enough product to serve one drink to all your guests and an additional 10%, just in case.  Make your selection when filling out the booking form.</p>
-        <div className='priceCollection'>
-          <div className='priceOptions'>
-            <div className='prices'>
-              <img className='priceLogo' src={onehour} alt='options1'/>
-              <p className='priceInfo'>$350 | 50 guests</p>
-            </div>
-            <div className='prices'>
-              <img className='priceLogo' src={twohour} alt='options2'/>
-              <p className='priceInfo'>$700 | 100 guests</p>
-            </div>
-            <div className='prices'>
-              <img className='priceLogo' src={threehour} alt='options3'/>
-              <p className='priceInfo'>$1050 | 150 guests</p>
-            </div>
-            <div className='prices'>
-              <img className='priceLogo' src={custom} alt='options4'/>
-              <p className='priceInfo'>Customize Your Event</p>
-            </div>
+      <section className='HPActivities'>
+        <div className='HPFamilies'>
+          <div className='HPImgHolder'>
+            <img className='HPAImg' src={families} alt='families'/>
+          </div>
+          <div className='HPAContent'>
+            <h2>Families</h2>
+            <p>Training husbands to love their wives and lead their families, wifes to love their husbands and children, and children to obey their parents.</p>
+            <button><Link className='HPAContent__button' to={``}>Learn More</Link></button>
+          </div>
+        </div>
+        <div className='HPGroups'>
+          <div className='HPImgHolder'>
+          <img className='HPAImg' src={group} alt='group'/>
+          </div>
+          <div className='HPAContent'>
+            <h2>Groups</h2>
+            <p>Helping each other have a better understanding of God's Word and to actively obey it.</p>
+            <button><Link className='HPAContent__button' to={``}>Learn More</Link></button>
           </div>
         </div>
       </section>
-      <footer className="AU__footer">
-        <ol className='footIcon'>
-          <li><a className='fIcon far fa-envelope' href={`mailto:${config.email}`} target='_blank' rel="noopener noreferrer"></a></li>
-          <li><a className='fIcon fab fa-linkedin-in' href={''}></a></li>
-          <li><a className='fIcon fab fa-instagram' href='https://www.instagram.com/sparrowscoffeega/' target='_blank' rel="noopener noreferrer"></a></li>
-        </ol>
-        <p>COPYRIGHT © 2020 SPARROWS COFFEE CO. | ALL RIGHTS RESERVED</p>
-      </footer>
+      <section className='HPConnection'>
+        <h2>Stay connected</h2>
+        <Form />
+      </section>
     </div>
   )
 }

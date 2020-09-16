@@ -19,7 +19,7 @@
   width: 100%;
   left: 0;
   right: 0;
-  height: 100%;
+  height: 850px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,10 +53,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  
   .Purpose__content {
     min-width: 400px;
     max-width: 1000px;
-    margin-top: 10%;
     }
 
   .PCc{

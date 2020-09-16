@@ -40,7 +40,7 @@ export const StyledBurger = styled.button`
 
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1430px) {
     display: none;
   }
 

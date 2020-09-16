@@ -46,6 +46,7 @@ export default class App extends Component {
     return (
       <Switch>
         <Route exact path = "/" component={HomePage}/>
+        <Route exact path = "/aboutus" component={AboutUs}/>
       </Switch>
     )
   }
@@ -56,7 +57,7 @@ export default class App extends Component {
         <div className='content-wrap'>
           <nav className='App__nav' 
           style={{
-          backgroundColor: this.state.status === "top" ? "rgba(14, 44, 59, 0.2)" : "rgba(250, 250, 250)",
+          backgroundColor: this.state.status === "top" ? "rgba(250, 250, 250, 0.3)" : "rgba(250, 250, 250)",
         }}>
             <Link className='navLink' to={'/'}>
               <img className='logo img' src={logo} alt='Logo' />
@@ -76,9 +77,9 @@ export default class App extends Component {
         <div className='footer'>
         <footer className="App__footer">
           <ol className='footIcon'>
-            <li><a className='fIcon far fa-envelope' href={`mailto:${config.email}`} target='_blank' rel="noopener noreferrer"></a></li>
+            <li><a className='fIcon far fa-envelope' href={''} target='_blank' rel="noopener noreferrer"></a></li>
             <li><a className='fIcon fab fa-linkedin-in' href={''}></a></li>
-            <li><a className='fIcon fab fa-instagram' href='https://www.instagram.com/sparrowscoffeega/' target='_blank' rel="noopener noreferrer"></a></li>
+            <li><a className='fIcon fab fa-instagram' href='' target='_blank' rel="noopener noreferrer"></a></li>
           </ol>
           {/* <p>COPYRIGHT © 2020 SPARROWS COFFEE CO. | ALL RIGHTS RESERVED</p> */}
         </footer>

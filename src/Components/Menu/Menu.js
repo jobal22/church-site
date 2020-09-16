@@ -8,18 +8,14 @@ const Menu = ({ open, ...props }) => {
 
   return (
     <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
-      <a href="/" tabIndex={tabIndex}>
-        About Us
-      </a>
-      <a href="/book" tabIndex={tabIndex}>
-        Book Event
-      </a>
-      <a href="/team" tabIndex={tabIndex}>
-        Our Team
-      </a>
-      <a href="/contact" tabIndex={tabIndex}>
-        Let's Chat
-      </a>
+      <a href="/aboutus" tabIndex={tabIndex}>About Us</a>
+      <a href="/" tabIndex={tabIndex}>Join Us</a>
+      <a href="/" tabIndex={tabIndex}>Families</a>
+      <a href="/" tabIndex={tabIndex}>Events</a>
+      <a href="/" tabIndex={tabIndex}>Media</a>
+      <a href="/" tabIndex={tabIndex}>Internships</a>
+      <a href="/" tabIndex={tabIndex}>Give</a>
+      <a href="/" tabIndex={tabIndex}>Contact Us</a>
     </StyledMenu>
   );
 };

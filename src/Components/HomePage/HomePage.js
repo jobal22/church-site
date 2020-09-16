@@ -27,7 +27,7 @@ export default function AboutUs() {
       <section className='HPSermon'>
         <div className='HPSermon__background'/>
         <h3>Last Weeks Sermon</h3>
-        <iframe className='youtubeVid' width="560" height="315" src="https://www.youtube.com/embed/gbZ-W4vYuF4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+        <iframe className='youtubeVid' src="https://www.youtube.com/embed/gbZ-W4vYuF4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
       </section>
       <section className='HPActivities'>
         <div className='HPFamilies'>

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Purpose from './Purpose';
 import Elders from './Elders';
 import Staff from './Staff';
+import History from './History';
+import './AboutUs.css';
 
 
 export default class AboutUs extends Component {
@@ -18,7 +20,7 @@ export default class AboutUs extends Component {
           <Staff />
         </section>
         <section className='AUBeliefs'>
-          
+          <History />
         </section>
         <section className='AUHistory'>
           

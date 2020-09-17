@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Purpose from './Purpose';
 import Elders from './Elders';
+import Staff from './Staff';
+
 
 export default class AboutUs extends Component {
   render() {
@@ -13,7 +15,7 @@ export default class AboutUs extends Component {
           <Elders />
         </section>
         <section className='AUStaff'>
-          
+          <Staff />
         </section>
         <section className='AUBeliefs'>
           

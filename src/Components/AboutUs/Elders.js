@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import pastor from '../../Images/pastor.jpg';
 import musician from '../../Images/musician.jpg';
 import youth from '../../Images/youngpastor.jpg';
-import secretary from '../../Images/pastor.jpg';
-import assistant from '../../Images/pastor.jpg';
 import './Elders.css';
 
 export default class Purpose extends Component {

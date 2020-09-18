@@ -3,7 +3,7 @@ import secretary from '../../Images/secretary.jpg';
 import assistant from '../../Images/admin.jpg';
 import './Staff.css';
 
-export default class Purpose extends Component {
+export default class Staff extends Component {
   render() {
     return (
       <div className='Staff'>

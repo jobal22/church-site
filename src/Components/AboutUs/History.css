@@ -52,3 +52,9 @@
   text-align: left;
   margin: 0 20px 0 20px;
 }
+
+@media screen and (min-width: 768px) {
+  .Himg__content {
+    font-size: 46px;
+  }
+} 

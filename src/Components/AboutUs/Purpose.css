@@ -78,6 +78,10 @@
     margin-right: 50px;
   }
 
+  .PCcTitle > h2 {
+    margin-top: 15px;
+  }
+
   .PCcContent {
     width: 50%;
   }

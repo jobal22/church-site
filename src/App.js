@@ -8,6 +8,7 @@ import calvary from './Images/calvary-logo2.png';
 import logo from './Images/trinity-word-logo.png';
 import HamburgerMenu from './Components/HamburgerMenu/HamburgerMenu';
 import AboutUs from './Components/AboutUs/AboutUs';
+import JoinUs from './Components/JoinUs/JoinUs';
 import HomePage from './Components/HomePage/HomePage';
 import './App.css';
 
@@ -47,6 +48,7 @@ export default class App extends Component {
       <Switch>
         <Route exact path = "/" component={HomePage}/>
         <Route exact path = "/aboutus" component={AboutUs}/>
+        <Route exact path = "/joinus" component={JoinUs}/>
       </Switch>
     )
   }

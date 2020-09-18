@@ -4,7 +4,7 @@ import musician from '../../Images/musician.jpg';
 import youth from '../../Images/youngpastor.jpg';
 import './Elders.css';
 
-export default class Purpose extends Component {
+export default class Elders extends Component {
   render() {
     return (
       <div className='Elders'>

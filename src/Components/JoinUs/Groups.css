@@ -1,0 +1,97 @@
+.Groups {
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  font-family: lora;
+}
+
+.Grimg  {
+  display: flex;
+  justify-content: center;
+  /* font-family: 'Hind', sans-serif;
+  font-style: normal; */
+  background-color: transparent;
+  color: #FFF;
+  height: 859px;
+}
+
+.Grimg__background {
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 850px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-image: url('../../Images/groups.jpg');
+}
+
+.Grimg__content {
+  width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  margin-top: 320px;
+  margin-bottom: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 46px;
+}
+
+.Groups__content {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+.GrCcContent {
+  text-align: left;
+  margin: 0 20px 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .Groups__content {
+    min-width: 400px;
+    max-width: 1000px;
+    }
+
+  .GrCc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+  }
+
+
+  .GrCcTitle {
+    /* padding-top: 6%;
+    padding-left: 10%;
+    padding-right: 10%; */
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 50px;
+  }
+
+  .GrCcTitle > h2 {
+    margin-top: 15px;
+  }
+
+  .GrCcContent {
+    width: 50%;
+  }
+
+  .GrCcContent > p {
+    margin-right: 10%;
+  }
+
+  .GrCcContent {
+    margin: 0;
+  }
+}

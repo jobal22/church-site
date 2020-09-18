@@ -10,22 +10,18 @@ export default class AboutUs extends Component {
   render() {
     return (
       <div className='AboutUs'>
-        <section className='AUPurpose'>
+        <section>
           <Purpose />
         </section>
-        <section className='AUElders'>
+        <section id='Elders'>
           <Elders />
         </section>
-        <section className='AUStaff'>
+        <section id='Staff'>
           <Staff />
         </section>
-        <section className='AUBeliefs'>
+        <section id='History'>
           <History />
         </section>
-        <section className='AUHistory'>
-          
-        </section>
-  
       </div>
     )
   }

@@ -52,12 +52,12 @@
   padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #245066;
+  /* background-color: #245066; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url('../../Images/EB1.jpg');
+  background-image: url('../../Images/EB2.jpg');
   /* font-family: 'Permanent Marker', cursive; */
   color: black;
 }

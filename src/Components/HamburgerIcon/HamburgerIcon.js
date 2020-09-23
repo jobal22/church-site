@@ -2,10 +2,10 @@ import React from 'react';
 import { bool, func } from 'prop-types';
 import { StyledBurger } from './HamburgerIcon.styled';
 
-const HamburgerburgerMenu = ({ open, setOpen, ...props }) => {
-  const isExpanded = open ? true : false;
+const HamburgerburgerMenu = ({ expanded, setExpanded }) => {
+  // const isExpanded = open ? true : false;
   return (
-    <StyledBurger aria-label="Toggle menu" aria-expanded={isExpanded} open={open} onClick={() => setOpen(!open)} {...props}>
+    <StyledBurger aria-label="Toggle menu"  expanded={expanded} onClick={() => setExpanded(expanded ? false : "expanded")}>
       <span />
       {/* <span /> */}
       <span />
@@ -14,8 +14,8 @@ const HamburgerburgerMenu = ({ open, setOpen, ...props }) => {
 };
 
 HamburgerburgerMenu.propTypes = {
-  open: bool.isRequired,
-  setOpen: func.isRequired,
+  expanded: bool.isRequired,
+  setExpanded: func.isRequired,
 };
 
 export default HamburgerburgerMenu;

@@ -43,6 +43,17 @@
   box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
 }
 
+.navGos {
+  background-color:  #0e2c3b;
+  margin: 0;
+}
+
+.navGos > p {
+  margin: 0 5px;
+  color: #FAFAFA;
+  font-size: 7px;
+}
+
 .logo {
   width: 150px;
   position: absolute; 
@@ -114,6 +125,14 @@ ol {
   color:black;
   background-color: white;
 }
+
+@media screen and (min-width: 768px) {
+  .navGos > p {
+    margin: 0 5px;
+    font-size: 15px;
+  }
+}
+
 
 @media screen and (min-width: 1440px) {
   .App__nav {

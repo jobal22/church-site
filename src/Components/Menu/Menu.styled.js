@@ -6,7 +6,7 @@ export const StyledMenu = styled.nav`
   flex-direction: column;
   // justify-content: center;
   background: #FAFAFA;
-  transform: ${({ open }) => open ? 'translateY(-100)' : 'translateY(-100%)'};
+  transform: ${({ expanded }) => expanded ? 'translateY(-100)' : 'translateY(-100%)'};
   height: 100vh;
   text-align: left;
   padding-top: 30px;
@@ -59,11 +59,7 @@ export const StyledMenu = styled.nav`
       outline: none !important;
     }
   }
-  
-  // .navbar a:hover, .dropdown:hover .dropbtn {
-  //   background-color: red;
-  // }
-  
+    
   .dropdown-content {
     display: none;
     position: absolute;
@@ -97,7 +93,7 @@ export const StyledMenu = styled.nav`
     text-align: center;
     padding: 10px;
     padding-right: 5%;
-    padding-top: 20px;
+    padding-top: 40px;
     position: absolute;
     top: 0;
     right: 0;

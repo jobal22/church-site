@@ -10,6 +10,7 @@ import HamburgerMenu from './Components/HamburgerMenu/HamburgerMenu';
 import AboutUs from './Components/AboutUs/AboutUs';
 import JoinUs from './Components/JoinUs/JoinUs';
 import HomePage from './Components/HomePage/HomePage';
+import Event from './Components/Event/Event';
 import './App.css';
 
 export default class App extends Component {
@@ -49,6 +50,7 @@ export default class App extends Component {
         <Route exact path = "/" component={HomePage}/>
         <Route exact path = "/aboutus" component={AboutUs}/>
         <Route exact path = "/joinus" component={JoinUs}/>
+        <Route exact path = "/events" component={Event}/>
       </Switch>
     )
   }
@@ -59,8 +61,8 @@ export default class App extends Component {
         <div className='content-wrap'>
           <nav className='App__nav' 
           style={{
-          backgroundColor: this.state.status === "top" ? "rgba(250, 250, 250, 0.3)" : "rgba(250, 250, 250)",
-        }}>
+          backgroundColor: this.state.status === "top" ? "rgba(250, 250, 250, 0.3)" : "rgba(250, 250, 250)",}}>
+            <div className='navGos'><p>Jesus died on the cross for our sins and on the third day He rose from the grave!!!</p></div>
             <Link className='navLink' to={'/'}>
               <img className='logo img' src={logo} alt='Logo' />
             </Link>

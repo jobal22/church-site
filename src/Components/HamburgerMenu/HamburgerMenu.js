@@ -6,18 +6,19 @@ import Menu from '../Menu/Menu.js';
 import './HamburgerMenu.css';
 
 function HamburgerMenu() {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
+  const [expanded, setExpanded] = useState(false);
   const node = useRef();
   const menuId = 'main-menu';
 
-  useOnClickOutside(node, () => setOpen(false));
+  // useOnClickOutside(node, () => setOpen(false));
 
   return (
     <>
       <div className="NavBar"ref={node}>
-        <FocusLock disabled={!open}>
-          <HamburgerIcon className='menu' open={open} setOpen={setOpen} aria-controls={menuId} />
-          <Menu open={open} setOpen={setOpen} id={menuId} />
+        <FocusLock disabled={!expanded}>
+          <HamburgerIcon className='menu' expanded={expanded} setExpanded={setExpanded} aria-controls={menuId} />
+          <Menu expanded={expanded} setExpanded={setExpanded} id={menuId} />
         </FocusLock>
       </div>        
     </>

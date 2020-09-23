@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledBurger = styled.button`
   position: absolute;
-  top: 23%;
+  top: 40%;
   right: 2rem;
   display: flex;
   flex-direction: column;
@@ -27,19 +27,24 @@ export const StyledBurger = styled.button`
     position: relative;
     transform-origin: 1px;
     :first-child {
-      transform: ${({ open }) => open ? 'scaleX(.8) translateX(4px)' : ''};
-      background: ${({ open }) => open ? 'black' : ''};
+      transform: ${({ expanded }) => expanded ? 'scaleX(.8) translateX(4px)' : ''};
+      background: ${({ expanded }) => expanded ? 'black' : ''};
     }
     // :nth-child(2) {
     //   opacity: ${({ open }) => open ? '0' : '1'};
     //   transform: ${({ open }) => open ? 'translateX(20px)' : 'translateX(0)'};
     // }
     :nth-child(2) {
-      transform: ${({ open }) => open ? 'translateX(15px) translateY(8px) rotate(-90deg)' : ''};
-      background: ${({ open }) => open ? 'black' : ''};
+      transform: ${({ expanded }) => expanded ? 'translateX(15px) translateY(8px) rotate(-90deg)' : ''};
+      background: ${({ expanded }) => expanded ? 'black' : ''};
 
     }
   }
+
+  @media screen and (min-width: 768px) {
+    top: 45%;
+  }
+
   @media screen and (min-width: 1430px) {
     display: none;
   }

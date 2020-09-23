@@ -56,7 +56,7 @@ export default class Footer extends Component {
         <section className='footIcon1'>
           <ol className='footIcon'>
             <li><a className='fIcon far fa-envelope' href={''} target='_blank' rel="noopener noreferrer"></a></li>
-            <li><a className='fIcon fab fa-linkedin-in' href={''}></a></li>
+            <li><a className='fIcon fab fa-facebook-f' href={''}></a></li>
             <li><a className='fIcon fab fa-instagram' href='' target='_blank' rel="noopener noreferrer"></a></li>
           </ol>
         </section>

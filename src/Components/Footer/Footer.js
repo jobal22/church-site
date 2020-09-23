@@ -19,15 +19,16 @@ export default class Footer extends Component {
           <img className='footlogo1' src={logo} alt='Logo' />
         </section>
         <section className='footAddress'>
-          <p>620 Churchill Rd<br></br>Fort Worth, TX 76114</p>
-          <p>817-732-5566</p>
+          <div className='faP'>
+            <p>620 Churchill Rd<br></br>Fort Worth, TX 76114</p>
+            <p>817-732-5566</p>
+          </div>
         </section>
-        <section className='footSiteLinks'>
+        {/* <section className='footSiteLinks'>
           <div className='fsl__content'>
             <h4><a className='fslct' href="/aboutus" >About Us</a></h4>
             <div className='fslLinks1'>
               <div className='fslLinksA'>
-                {/* <a href="/aboutus" >About Us</a> */}
                 <a href="/aboutus/#Elders">Elders</a>
                 <a href="/aboutus/#Staff">Staff</a>
                 <a href="/aboutus/#History" >History</a>
@@ -38,7 +39,6 @@ export default class Footer extends Component {
             <h4><a className='fslct' href="/joinus" >Join Us</a></h4>
             <div className='fslLinks2'>
               <div className='fslLinksC'>
-                {/* <a href="/joinus" >Join Us</a> */}
                 <a href="/joinus/#Membership" >Membership</a>
                 <a href="/joinus/#Groups" >Groups</a>
                 <a href="/joinus/#Children" >Children</a>
@@ -49,11 +49,10 @@ export default class Footer extends Component {
                 <a href="/events" >Events</a>
                 <a href="/" >Media</a>
                 <a href="/" >Give</a>
-                {/* <a href="/" >Contact Us</a> */}
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className='footIcon1'>
           <ol className='footIcon'>
             <li><a className='fIcon far fa-envelope' href={''} target='_blank' rel="noopener noreferrer"></a></li>

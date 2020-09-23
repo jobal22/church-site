@@ -51,10 +51,10 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-      <section className='HPConnection'>
+      {/* <section className='HPConnection'>
         <h2>Stay connected</h2>
         <Form />
-      </section>
+      </section> */}
     </div>
   )
 }

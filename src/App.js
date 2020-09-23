@@ -11,6 +11,8 @@ import AboutUs from './Components/AboutUs/AboutUs';
 import JoinUs from './Components/JoinUs/JoinUs';
 import HomePage from './Components/HomePage/HomePage';
 import Event from './Components/Event/Event';
+import Form from './Components/Form/Form';
+import Footer from './Components/Footer/Footer';
 import './App.css';
 
 export default class App extends Component {
@@ -78,16 +80,20 @@ export default class App extends Component {
             </Context.Provider>
           </main>
         </div>
-        <div className='footer'>
+        <Footer />
+        {/* <div className='footer'>
         <footer className="App__footer">
+          <section className='HPConnection'>
+            <h2>Stay connected</h2>
+            <Form />
+          </section>
           <ol className='footIcon'>
             <li><a className='fIcon far fa-envelope' href={''} target='_blank' rel="noopener noreferrer"></a></li>
             <li><a className='fIcon fab fa-linkedin-in' href={''}></a></li>
             <li><a className='fIcon fab fa-instagram' href='' target='_blank' rel="noopener noreferrer"></a></li>
           </ol>
-          {/* <p>COPYRIGHT © 2020 SPARROWS COFFEE CO. | ALL RIGHTS RESERVED</p> */}
         </footer>
-        </div>
+        </div> */}
       </div>
     )
   }

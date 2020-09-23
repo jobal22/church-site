@@ -156,11 +156,11 @@
   text-decoration: none;
 }
 
-.HPConnection {
+/* .HPConnection {
   height: 330px;
   background-color: #FAFAFA;
   padding-top: 30px;
-}
+} */
 
 iframe {
   width: 560px; 
@@ -201,11 +201,11 @@ iframe {
     margin-right: auto;
   }
 
-  .HPConnection {
+  /* .HPConnection {
     height: 350px;
     padding-top: 50px;
     margin-bottom: 0;
-  }
+  } */
 }
 
 @media screen and (min-width: 1024px) {

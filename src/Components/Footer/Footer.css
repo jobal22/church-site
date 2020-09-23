@@ -1,0 +1,166 @@
+.App__footer {
+  background-color: #FAFAFA;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  font-size: 20px;
+  color: rgba(14, 44, 59);
+  text-align: center;
+  font-family: Neue Haas Unica, 'Times New Roman', Times, serif;
+  z-index: 1;
+}
+
+.foot__Connection {
+  /* height: 330px; */
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+
+.foot__Connection > h2{
+  font-size: 25px;
+  line-height: 1.5em;
+  letter-spacing: .01em;
+  margin-top: 30px;
+  /* text-transform: none;
+  text-shadow: 1px 2px 18px rgb(97, 97, 97); */
+  /* text-align: left; */
+  /* margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px; */
+}
+
+.footHr {
+  width: 80%;
+  height: 1px;
+  background-color: rgba(14, 44, 59);
+}
+
+.footLogo {
+  padding: 30px 0 10px 0;
+}
+
+.footlogo1 {
+  width: 250px;
+}
+
+.footAddress {
+  text-align: left;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.footSiteLinks {
+  margin-bottom: 30px;;
+}
+
+.fslLinks1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-top: 50px; */
+  /* list-style: none; */
+}
+
+.fslct {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+.fslLinksA {
+  margin-bottom: 20px;
+}
+
+.fslLinksA > a, .fslLinksB > a, .fslLinksC > a, .fslLinksD > a {
+  padding: 0 20px;
+  color: rgb(26, 65, 85);
+  font-size: 20px;
+}
+
+.fslLinks2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-top: 50px; */
+  /* list-style: none; */
+}
+
+.fslLinksC, .fslLinksD {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+ol {
+  padding: 0;
+  margin: 0; 
+}
+
+.footInfo {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.footLink {
+  text-decoration: none;
+  color: rgba(14, 44, 59);
+  font-size: 10px;
+  font-weight: 1000;
+  margin: 10px;
+}
+
+.footLink:hover {
+  color: #E3D0CC;
+}
+
+.footIcon {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-bottom: 5px;
+}
+
+.fIcon {
+  text-decoration: none;
+  font-size: 15px;
+  color: rgba(14, 44, 59);
+  margin: 10px;
+  line-height: 28px;
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  border: 1px solid rgba(14, 44, 59);
+}
+
+.fIcon:hover {
+  color:black;
+  background-color: white;
+}
+
+
+@media screen and (min-width: 768px) {
+  .footLink {
+    font-size: 20px;
+  }
+
+  .fIcon {
+    font-size: 25px;
+    line-height: 38px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .foot__Connection {
+    height: 350px;
+    padding-top: 50px;
+    margin-bottom: 0;
+  }
+}

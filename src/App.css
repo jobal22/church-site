@@ -51,7 +51,8 @@
 .navGos > p {
   margin: 0 5px;
   color: #FAFAFA;
-  font-size: 7px;
+  font-size: 10px;
+  padding: 0 15%;
 }
 
 .logo {
@@ -64,10 +65,7 @@
   text-align: center;
 }
 
-.App__footer {
-  /* position: absolute;
-  width: 100%;
-  bottom: 0; */
+/* .App__footer {
   background-color: #0e2c3b;
   padding-top: 10px;
   padding-bottom: 3px;
@@ -124,12 +122,13 @@ ol {
 .fIcon:hover {
   color:black;
   background-color: white;
-}
+} */
 
 @media screen and (min-width: 768px) {
   .navGos > p {
     margin: 0 5px;
     font-size: 15px;
+    padding: 0;
   }
 }
 

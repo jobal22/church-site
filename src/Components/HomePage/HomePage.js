@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Form from '../Form/Form';
 import group from '../../Images/small-group.jpg';
 import families from '../../Images/families.jpg';
-
+import ScrollToTop from '../ScrollToTop/ScrollToTop';
 import './HomePage.css';
 
 export default function AboutUs() {
@@ -17,6 +17,7 @@ export default function AboutUs() {
   }, []);  
   return (
     <div className='HomePage'>
+      <ScrollToTop />
       <section className='HPServiceTime'>
         <div className='HPServiceTime__background' />
         <div className='HPServiceTime__content'>

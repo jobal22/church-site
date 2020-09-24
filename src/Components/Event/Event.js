@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import ScrollToTop from '../ScrollToTop/ScrollToTop';
 import './Event.css';
 
 export default class Event extends Component {
   render() {
     return (
       <div className='Event'>
+        <ScrollToTop />      
         <div className='Evimg'>
           <div className='Evimg__background' />
           <div className='Evimg__content'>

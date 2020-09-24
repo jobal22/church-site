@@ -79,7 +79,7 @@ export default class App extends Component {
           </nav>
           <main className='Main'>
             <Context.Provider>
-              <ScrollToTop />
+              {/* <ScrollToTop /> */}
               <main className='App__main'>{this.renderMainRoutes()}</main>
             </Context.Provider>
           </main>

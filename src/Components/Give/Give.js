@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import ScrollToTop from '../ScrollToTop/ScrollToTop';
 import './Give.css';
 
 export default class Give extends Component {
   render() {
     return (
       <div className='Give'>
+        <ScrollToTop />
         <div className='Giimg'>
           <div className='Giimg__background' />
           <div className='Giimg__content'>

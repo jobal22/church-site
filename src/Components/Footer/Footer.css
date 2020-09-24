@@ -10,7 +10,6 @@
 }
 
 .foot__Connection {
-  /* height: 330px; */
   padding-top: 10px;
   margin-bottom: 30px;
 }
@@ -20,12 +19,6 @@
   line-height: 1.5em;
   letter-spacing: .01em;
   margin-top: 30px;
-  /* text-transform: none;
-  text-shadow: 1px 2px 18px rgb(97, 97, 97); */
-  /* text-align: left; */
-  /* margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 30px; */
 }
 
 .footHr {
@@ -49,55 +42,8 @@
 }
 
 .faP {
-  /* text-align: left; */
   font-size: 18px;
-  /* margin: 0 50px 0 50px; */
-
 }
-
-/* .footSiteLinks {
-  margin-bottom: 30px;;
-}
-
-.fslLinks1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.fslct {
-  text-decoration: none;
-  color: black;
-  font-size: 25px;
-}
-
-.fslLinksA {
-  margin-bottom: 20px;
-}
-
-.fslLinksA > a, .fslLinksB > a, .fslLinksC > a, .fslLinksD > a {
-  padding: 0 20px;
-  color: rgb(26, 65, 85);
-  font-size: 20px;
-}
-
-.fslLinks2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.fslLinksC, .fslLinksD {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-} */
 
 ol {
   padding: 0;

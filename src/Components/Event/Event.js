@@ -37,10 +37,6 @@ export default class Event extends Component {
               <h3>Prayer and Devotional</h3>
               <p>Wednesday 6:30pm - 7:30pm</p>
             </div>
-            {/* <div className='EventBlock'>
-              <h3>Choir Practice</h3>
-              <p>Wednesday 7:30pm - 8:30pm</p>
-            </div> */}
             <div className='EventBlock'>
               <h3>Youth Bible Study</h3>
               <p>Wednesday 7:30pm - 8:30pm</p>

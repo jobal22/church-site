@@ -24,35 +24,6 @@ export default class Footer extends Component {
             <p>817-732-5566</p>
           </div>
         </section>
-        {/* <section className='footSiteLinks'>
-          <div className='fsl__content'>
-            <h4><a className='fslct' href="/aboutus" >About Us</a></h4>
-            <div className='fslLinks1'>
-              <div className='fslLinksA'>
-                <a href="/aboutus/#Elders">Elders</a>
-                <a href="/aboutus/#Staff">Staff</a>
-                <a href="/aboutus/#History" >History</a>
-              </div>
-            </div>
-          </div>
-          <div className='fsl__content'>
-            <h4><a className='fslct' href="/joinus" >Join Us</a></h4>
-            <div className='fslLinks2'>
-              <div className='fslLinksC'>
-                <a href="/joinus/#Membership" >Membership</a>
-                <a href="/joinus/#Groups" >Groups</a>
-                <a href="/joinus/#Children" >Children</a>
-                <a href="/joinus/#Internship">Internship</a>
-              </div>
-              <div className='fslLinksD'>
-                <a href="/joinus/#Missions" >Missions</a>
-                <a href="/events" >Events</a>
-                <a href="/" >Media</a>
-                <a href="/" >Give</a>
-              </div>
-            </div>
-          </div>
-        </section> */}
         <section className='footIcon1'>
           <ol className='footIcon'>
             <li><a className='fIcon far fa-envelope' href={''} target='_blank' rel="noopener noreferrer"></a></li>

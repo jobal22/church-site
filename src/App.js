@@ -85,19 +85,6 @@ export default class App extends Component {
           </main>
         </div>
         <Footer />
-        {/* <div className='footer'>
-        <footer className="App__footer">
-          <section className='HPConnection'>
-            <h2>Stay connected</h2>
-            <Form />
-          </section>
-          <ol className='footIcon'>
-            <li><a className='fIcon far fa-envelope' href={''} target='_blank' rel="noopener noreferrer"></a></li>
-            <li><a className='fIcon fab fa-linkedin-in' href={''}></a></li>
-            <li><a className='fIcon fab fa-instagram' href='' target='_blank' rel="noopener noreferrer"></a></li>
-          </ol>
-        </footer>
-        </div> */}
       </div>
     )
   }

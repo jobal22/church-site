@@ -37,9 +37,9 @@ const Menu = ({ expanded, setExpanded }) => {
       {/* <a href="/aboutus" tabIndex={tabIndex}>About Us</a> */}
       {/* <a href="/joinus" tabIndex={tabIndex}>Join Us</a> */}
       <a href="/events" >Events</a>
-      <a href="/" >Media</a>
+      {/* <a href="/" >Media</a> */}
       <a href="/give" >Give</a>
-      <a href="/" >Contact Us</a>
+      {/* <a href="/" >Contact Us</a> */}
     </StyledMenu>
   );
 };

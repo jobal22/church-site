@@ -13,6 +13,7 @@ import HomePage from './Components/HomePage/HomePage';
 import Event from './Components/Event/Event';
 import Form from './Components/Form/Form';
 import Footer from './Components/Footer/Footer';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 import './App.css';
 
 export default class App extends Component {
@@ -76,6 +77,7 @@ export default class App extends Component {
           </nav>
           <main className='Main'>
             <Context.Provider>
+              <ScrollToTop />
               <main className='App__main'>{this.renderMainRoutes()}</main>
             </Context.Provider>
           </main>

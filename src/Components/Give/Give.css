@@ -1,0 +1,79 @@
+.Give {
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: lora;
+}
+
+.Giimg  {
+  display: flex;
+  justify-content: center;
+  /* font-family: 'Hind', sans-serif;
+  font-style: normal; */
+  background-color: transparent;
+  color: #FFF;
+  height: 859px;
+}
+
+.Giimg__background {
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 850px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-image: url('../../Images/give.jpg');
+}
+
+.Giimg__content {
+  width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  margin-top: 320px;
+  margin-bottom: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 46px;
+}
+
+.Give__content {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  min-width: 250px;
+  max-width: 800px;
+}
+
+.GiTitle > h2 {
+  /* font-size: 25px; */
+  margin: 0 20px 0 20px;
+}
+
+.GiContent {
+  text-align: left;
+  margin: 0 20px 0 20px;
+}
+
+.GiveBC > button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(14, 44, 59);
+  /* color: #FFF; */
+  padding: 18px 24px;
+  /* margin-top: 10px; */
+  margin-bottom: 50px;
+}
+
+.Give__button {
+    color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: .2em;
+  text-decoration: none;
+}

@@ -12,6 +12,7 @@ import JoinUs from './Components/JoinUs/JoinUs';
 import HomePage from './Components/HomePage/HomePage';
 import Event from './Components/Event/Event';
 import Form from './Components/Form/Form';
+import Give from './Components/Give/Give';
 import Footer from './Components/Footer/Footer';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 import './App.css';
@@ -54,6 +55,7 @@ export default class App extends Component {
         <Route exact path = "/aboutus" component={AboutUs}/>
         <Route exact path = "/joinus" component={JoinUs}/>
         <Route exact path = "/events" component={Event}/>
+        <Route exact path = "/give" component={Give}/>
       </Switch>
     )
   }

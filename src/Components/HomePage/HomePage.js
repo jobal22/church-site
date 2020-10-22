@@ -38,7 +38,7 @@ export default function AboutUs() {
           <div className='HPAContent'>
             <h2>Families</h2>
             <p>Training husbands to love their wives and lead their families, wifes to love their husbands and children, and children to obey their parents.</p>
-            <button><Link className='HPAContent__button' to={``}>Learn More</Link></button>
+            <button><a className='HPAContent__button' href="/joinus/#Children">Learn More</a></button>
           </div>
         </div>
         <div className='HPGroups'>
@@ -48,7 +48,7 @@ export default function AboutUs() {
           <div className='HPAContent'>
             <h2>Groups</h2>
             <p>Helping each other have a better understanding of God's Word and to actively obey it.</p>
-            <button><Link className='HPAContent__button' to={``}>Learn More</Link></button>
+            <button><a className='HPAContent__button' href="/joinus/#Groups">Learn More</a></button>
           </div>
         </div>
       </section>

@@ -65,8 +65,9 @@ export default class App extends Component {
       <div className='App-container'>
         <div className='content-wrap'>
           <nav className='App__nav' 
-          style={{
-          backgroundColor: this.state.status === "top" ? "rgba(250, 250, 250, 0.3)" : "rgba(250, 250, 250)",}}>
+            style={{
+            backgroundColor: this.state.status === "top" ? "rgba(250, 250, 250, 0.3)" : "rgba(250, 250, 250)",}}
+          >
             <div className='navGos'><p>Jesus died on the cross for our sins and on the third day He rose from the grave!!!</p></div>
             <Link className='navLink' to={'/'}>
               <img className='logo img' src={logo} alt='Logo' />

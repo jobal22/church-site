@@ -31,6 +31,7 @@
   padding-top: 1px;
   padding-bottom: 50px;
   background-color: rgba(14, 44, 59, 0.2);
+  /* background-color: red; */
   font-family: 'Montserrat', sans-serif;
   position: fixed;
   top: 0;
@@ -45,7 +46,7 @@
 
 .navGos {
   background-color:  #0e2c3b;
-  margin: 0;
+  margin-top: -1px;
 }
 
 .navGos > p {
